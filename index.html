@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel = 'stylesheet' href = 'style.css'>
+    <script src= 'index.js' defer></script>
+</head>
+<body>
+    <h1>Expense Tracker</h1>
+    <div id = 'container'>
+        <div id = 'balanceContainer'>
+            <div id = 'top'>
+                <h3>Total Balance</h3>
+                <div class = 'amountDiv'>
+                    <div>$</div>
+                    <div id = 'total'>0.00</div>
+                </div>
+            </div>
+            <div id = 'bottom'>
+                <div id = 'income'>
+                    <h3>Income</h3>
+                    <div class = 'amountDiv'>
+                        <div>$</div>
+                        <div id = 'incomeDisplay'>0.00</div>
+                    </div>
+                </div>
+                <div id = 'expense'>
+                    <h3>Expense</h3>
+                    <div class = 'amountDiv'>
+                        <div>$</div>
+                        <div id = 'expenseDisplay'>0.00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id = 'transaction'>
+            <h3>Transaction</h3>
+            <div id = 'history'>
+                <div id = 'no'>No transaction.</div>
+            </div>
+        </div>
+        <div id = 'addTransaction'>
+            <h3>Add Transaction</h3>
+            <div id = 'addTranDiv'>
+                <button id = 'incomeBtn'>INCOME</button>
+                <button id = 'expenseBtn'>EXPENSE</button>
+            </div>
+            <div id = 'nameDiv'>
+                <label for = 'name'>NAME</label><br>
+                <input type = 'text' id = 'name' placeholder="Note" required><br>
+            </div>
+            <div id = 'amountDate'>
+                <div id = 'left'>
+                    <label for = 'amount'>AMOUNT</label><br>
+                    <input type = 'number' id = 'amount' placeholder="Amount" required>
+                </div>
+                <div id = 'right'>
+                    <label for = 'date'>DATE</label><br>
+                    <input type = 'date' id = 'date'>
+                </div>
+            </div>
+            <input type = 'submit' value="SUBMIT" id = 'submit'>
+        </div>
+    </div>
+</body>
+</html>
