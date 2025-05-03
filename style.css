@@ -4,6 +4,7 @@
   font-family: "Karla", sans-serif;
 }
 body {
+  padding-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
