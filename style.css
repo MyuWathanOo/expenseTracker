@@ -3,8 +3,7 @@
   margin: 0;
   font-family: "Karla", sans-serif;
 }
-body {
-  padding-top: 20px;
+#mainContainer{
   display: flex;
   justify-content: center;
   align-items: center;
